@@ -3,7 +3,6 @@ html{
 }
 
 /*Navigation Section*/
-
 #navBar,#navBarMobile{
     background-color: rgba(238, 238, 238, 0.5);
 
@@ -21,7 +20,100 @@ html{
 
     z-index: 5;
 }
-
 #sidebarButton{
     background-color: rgba(0, 0, 0, 0);
+}
+
+
+/*Background Image One*/
+#image-one{
+    position: relative;
+    background-color: #1c7982;
+
+    width: 100%;
+    height: 850px;
+}
+
+#section-one{
+    position: absolute;
+    background-color: rgba(238, 238, 238, 0.85);
+
+    top: 725px;
+
+    width: 100%;
+    height: 400px;
+
+    z-index: 5;
+}
+
+/*Background Image Two*/
+#image-two{
+    position: relative;
+    background-color: #8f9544;
+
+    width: 100%;
+    height: 850px;
+}
+
+#section-two{
+    position: absolute;
+    background-color: rgba(238, 238, 238, 0.85);
+
+    top: 1470px;
+
+    width: 100%;
+    height: 400px;
+
+    z-index: 5;
+}
+
+/*Background Image Three*/
+#image-three{
+    position: relative;
+    background-color: #954464;
+
+    width: 100%;
+    height: 850px;
+}
+
+#section-three{
+    position: absolute;
+    background-color: rgba(238, 238, 238, 0.85);
+
+    top: 2150px;
+
+    width: 100%;
+    height: 500px;
+
+    z-index: 5;
+}
+
+/*Background Image Four*/
+#image-four{
+    position: relative;
+    background-color: #7b4495;
+
+    width: 100%;
+    height: 850px;
+}
+
+#section-four{
+    position: absolute;
+    background-color: rgba(238, 238, 238, 0.85);
+
+    top: 3070px;
+
+    width: 100%;
+    height: 400px;
+
+    z-index: 5;
+}
+
+/*Footer*/
+#footer{
+    position: relative;
+    background-color: #212121;
+
+    width: 100%;
+    height: 250px;
 }
