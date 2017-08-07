@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Devuno - Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Section -->
+        <section id="navSection">
+            <!-- Full Navigation Bar -->
+            <div id="navBar" class="w3-bar w3-hide-small w3-mobile">
+                <div id="navLogo" class="w3-left">
+                    <img src="" alt="Devuno">
+                </div>
+                <div id="navLinks" class="w3-right">
+                    <a href="#"><div class="w3-bar-item w3-mobile">Work</div></a>
+                    <a href="#"><div class="w3-bar-item w3-mobile">Team</div></a>
+                    <a href="#"><div class="w3-bar-item w3-mobile">Services</div></a>
+                    <a href="#"><div class="w3-bar-item w3-mobile">Contact</div></a>
+                </div>
+            </div>
+            <!-- Mobile Navigation Bar -->
+            <div id="navBarMobile" class="w3-bar w3-show-small w3-hide-medium w3-hide-large w3-mobile">
+                <!-- Sidebar -->
+                    <div id="navSidebar" class="w3-left w3-bar-block w3-sidebar w3-animate-left w3-collapse">
+                        <div id="sidebarButton" class="w3-bar-item w3-button w3-hide-large"onclick="w3_close()" ><i class="material-icons">menu</i></div>
+                        <a href="#"><div class="w3-bar-item w3-left w3-mobile">Work</div></a>
+                        <a href="#"><div class="w3-bar-item w3-left w3-mobile">Team</div></a>
+                        <a href="#"><div class="w3-bar-item w3-left w3-mobile">Services</div></a>
+                        <a href="#"><div class="w3-bar-item w3-left w3-mobile">Contact</div></a>
+                    </div>
+                <!-- Overlay -->
+                    <div id="overlay" class="w3-overlay w3-animate-opacity" onclick="w3_close()"></div>
+                <!-- Logo -->
+                    <div id="navLogoMobile" class="w3-center">
+                        <img src="" alt="Devuno">
+                        <div class="w3-bar-item w3-button w3-hide-large"onclick="w3_open()" ><i class="material-icons">menu</i></div>
+                    </div>
+            </div>
+        </section>
+
+    </body>
+    <!-- JS for collapsing mobile sidebar -->
+    <script id="collapseScript" type="text/javascript">
+    function w3_open() {
+        document.getElementById("navSidebar").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("navSidebar").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
+
+</html>
