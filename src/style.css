@@ -117,3 +117,24 @@ html{
     width: 100%;
     height: 250px;
 }
+
+
+/*Media Query for increasing height of elements when smaller than 500px*/
+@media only screen and (max-width: 500px) {
+  #image-one{
+      height: 1050px;
+  }
+  #image-two{
+      height: 1050px;
+  }
+  #image-three{
+      height: 1050px;
+  }
+  #image-four{
+      height: 1050px;
+  }
+  #section-one{
+      height: 600px;
+  }
+
+}
