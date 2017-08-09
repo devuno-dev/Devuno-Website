@@ -120,7 +120,7 @@ html{
 
 
 /*Media Query for increasing height of elements when smaller than 500px*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   #image-one{
       height: 1050px;
   }
@@ -134,7 +134,47 @@ html{
       height: 1050px;
   }
   #section-one{
-      height: 600px;
+      height: 700px;
   }
-
+  #section-two{
+      height: 700px;
+      top: 1870px;
+  }
+  #section-three{
+      height: 700px;
+      top: 2850px;
+  }
+  #section-four{
+      height: 500px;
+      top: 3775px;
+  }
 }
+
+@media only screen and (min-width: 1920px) {
+  #image-one{
+      height: 950px;
+  }
+  #image-two{
+      height: 950px;
+  }
+  #image-three{
+      height: 1050px;
+  }
+  #image-four{
+      height: 1150px;
+  }
+  #section-one{
+      height: 550px;
+  }
+  #section-two{
+      height: 500px;
+      top: 1700px;
+  }
+  #section-three{
+      height: 550px;
+      top: 2650px;
+  }
+  #section-four{
+      height: 550px;
+      top: 3620px;
+  }
