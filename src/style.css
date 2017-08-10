@@ -4,24 +4,83 @@ html{
 
 /*Navigation Section*/
 #navBar,#navBarMobile{
-    background-color: rgba(238, 238, 238, 0.5);
+    position: relative;
+    background-color: rgba(238, 238, 238, .5);
 
-    padding-top: 15px;
-    padding-bottom: 15px;
+    box-shadow: 0px 10px 20px 2px rgba(23, 23, 23, 0.1);
+
+    z-index: 3;
 }
+
 #navSidebar{
     width: 100%;
 
     background-color: rgba(33, 33, 33, 0.45);
     color: #eeeeee;
 
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 
-    z-index: 5;
+    z-index: 4;
+
+    transition: .2s;
 }
 #sidebarButton{
     background-color: rgba(0, 0, 0, 0);
+    opacity: .8;
+}
+#sidebarMenuButton{
+  opacity: .8;
+  transition: .3s;
+}
+
+  /*Full Page Nav Styling*/
+#navLogo{
+  position: relative;
+  width: 250px;
+  height: 72px;
+}
+#navLogo img{
+  position: absolute;
+  top: 17px;
+  left: 30px;
+  width: 175px;
+}
+#navLinks a div{
+  background-color: rgba(33, 33, 33, 0.1);
+  color: #212121;
+  opacity: .75;
+
+  font-family:'SF Pro Display', 'Roboto', sans-serif;
+  font-size: 17px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  transition: .2s;
+}
+#navLinks a div:hover{
+  background-color: rgba(33, 33, 33, 0.2);
+}
+#navLinks a div:active{
+  background-color: #eeeeee;
+}
+
+  /*Mobile Page Nav Styling*/
+#navLogoMobile{
+  position: relative;
+
+  width: 60%;
+  height: 45px;
+}
+#navLogoMobile img{
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  width: 100px;
+
 }
 
 
@@ -32,18 +91,22 @@ html{
 
     width: 100%;
     height: 850px;
+
+    z-index: -1;
 }
 
 #section-one{
     position: absolute;
     background-color: rgba(238, 238, 238, 0.85);
 
+    box-shadow: 0px 10px 20px 2px rgba(23, 23, 23, 0.1);
+
     top: 725px;
 
     width: 100%;
     height: 400px;
 
-    z-index: 3;
+    z-index: 2;
 }
 
 /*Background Image Two*/
@@ -53,18 +116,22 @@ html{
 
     width: 100%;
     height: 850px;
+
+    z-index: -1;
 }
 
 #section-two{
     position: absolute;
     background-color: rgba(238, 238, 238, 0.85);
 
+    box-shadow: 0px 10px 20px 2px rgba(23, 23, 23, 0.1);
+
     top: 1470px;
 
     width: 100%;
     height: 400px;
 
-    z-index: 3;
+    z-index: 2;
 }
 
 /*Background Image Three*/
@@ -74,18 +141,22 @@ html{
 
     width: 100%;
     height: 850px;
+
+    z-index: -1;
 }
 
 #section-three{
     position: absolute;
     background-color: rgba(238, 238, 238, 0.85);
 
+    box-shadow: 0px 10px 20px 2px rgba(23, 23, 23, 0.1);
+
     top: 2150px;
 
     width: 100%;
     height: 500px;
 
-    z-index: 3;
+    z-index: 2;
 }
 
 /*Background Image Four*/
@@ -95,18 +166,22 @@ html{
 
     width: 100%;
     height: 850px;
+
+    z-index: -1;
 }
 
 #section-four{
     position: absolute;
     background-color: rgba(238, 238, 238, 0.85);
 
+    box-shadow: 0px 10px 20px 2px rgba(23, 23, 23, 0.1);
+
     top: 3070px;
 
     width: 100%;
     height: 400px;
 
-    z-index: 3;
+    z-index: 2;
 }
 
 /*Footer*/
@@ -117,3 +192,64 @@ html{
     width: 100%;
     height: 250px;
 }
+
+
+/*Media Query for increasing height of elements when smaller than 500px*/
+@media only screen and (max-width: 600px) {
+  #image-one{
+      height: 1050px;
+  }
+  #image-two{
+      height: 1050px;
+  }
+  #image-three{
+      height: 1050px;
+  }
+  #image-four{
+      height: 1050px;
+  }
+  #section-one{
+      height: 700px;
+  }
+  #section-two{
+      height: 700px;
+      top: 1870px;
+  }
+  #section-three{
+      height: 700px;
+      top: 2850px;
+  }
+  #section-four{
+      height: 500px;
+      top: 3775px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  #image-one{
+      height: 950px;
+  }
+  #image-two{
+      height: 950px;
+  }
+  #image-three{
+      height: 1050px;
+  }
+  #image-four{
+      height: 1150px;
+  }
+  #section-one{
+      height: 550px;
+  }
+  #section-two{
+      height: 500px;
+      top: 1700px;
+  }
+  #section-three{
+      height: 550px;
+      top: 2650px;
+  }
+  #section-four{
+      height: 550px;
+      top: 3625px;
+  }
